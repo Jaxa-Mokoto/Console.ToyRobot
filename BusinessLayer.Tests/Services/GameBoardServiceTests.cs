@@ -23,7 +23,7 @@ namespace BusinessLayer.Services.Tests
         [DataTestMethod]
         [DataRow("PLACE 1,1 EAST")]
         [DataRow("PLACE 1,2 WEST")]
-        public void isValidInitialPlaceCommand_WithValidhUserCommand_ReturnsTrue(string userCommand)
+        public void isValidInitialPlaceCommand_WithValidUserCommand_ReturnsTrue(string userCommand)
         {
             // ARRANGE
             GameBoardService _gameBoardService = new GameBoardService();

@@ -55,7 +55,6 @@
   <ItemGroup>
     <Compile Include="Services\GameBoardServiceTests.cs" />
     <Compile Include="Services\RuleServiceTests.cs" />
-    <Compile Include="Services\ToyRobotServiceTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -65,6 +64,10 @@
     <ProjectReference Include="..\BusinessLayer\BusinessLayer.csproj">
       <Project>{9D55A3B5-107D-4691-8DAC-F7A1FD299EEA}</Project>
       <Name>BusinessLayer</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Common\Common.csproj">
+      <Project>{9B87B104-1B35-4E66-9C7D-C4E222459422}</Project>
+      <Name>Common</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets" Condition="Exists('$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets')" />
