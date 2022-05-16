@@ -66,3 +66,6 @@ Output: (3,3) NORTH
 > MOVE
 > REPORT
 Output: (3,2) NORTH
+
+## How to run solution
+After cloning repository, set the Presentation.csproj to "Set as Startup Project" then execute (run the solution).
