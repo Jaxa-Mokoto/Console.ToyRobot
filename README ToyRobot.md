@@ -1,6 +1,6 @@
 # The Idea: Toy Robot
 
-Note: this document only provides context on the issue at hand (intellectual property of Telstra Purple).
+Note: this document only provides context on the issue at hand.
 
 Create a library that can read in commands of the following form:
 
