@@ -68,15 +68,13 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Services\Interfaces\IBehaviourService.cs" />
+    <Compile Include="Services\Interfaces\IRuleService.cs" />
     <Compile Include="Services\Interfaces\IGameBoardService.cs" />
-    <Compile Include="Services\Interfaces\ICommandService.cs" />
     <Compile Include="Services\Interfaces\IToyRobotService.cs" />
-    <Compile Include="Services\CommandService.cs" />
-    <Compile Include="Services\GameBoardService.cs" />
-    <Compile Include="Services\BehaviourService.cs" />
-    <Compile Include="Position.cs" />
     <Compile Include="Services\ToyRobotService.cs" />
+    <Compile Include="Services\GameBoardService.cs" />
+    <Compile Include="Services\RuleService.cs" />
+    <Compile Include="Helpers\Position.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -89,6 +87,7 @@
     <None Include="App.config" />
     <None Include="packages.config" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
     <PropertyGroup>

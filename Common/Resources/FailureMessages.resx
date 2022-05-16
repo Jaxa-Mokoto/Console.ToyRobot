@@ -117,11 +117,17 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="EmptyOrNullCommand" xml:space="preserve">
+    <value>Please enter a command!</value>
+  </data>
   <data name="InvalidCompassDirectionCommand" xml:space="preserve">
     <value>Invalid Compass Direction - valid direction is either NORTH, SOUTH, EAST or WEST</value>
   </data>
   <data name="InvalidDirectionCommand" xml:space="preserve">
     <value>Invalid Direction - valid direction is either RIGHT or LEFT</value>
+  </data>
+  <data name="InvalidFirstCommand" xml:space="preserve">
+    <value>First command must be PLACE with DIRECTION</value>
   </data>
   <data name="InvalidPlaceCommand" xml:space="preserve">
     <value>Invalid PLACE command - valid game play is between 0 and 6.</value>
@@ -130,6 +136,12 @@
     <value>Invalid REPORT command - enter REPORT to successfully submit commands.</value>
   </data>
   <data name="ToyRobotOutOfBounds" xml:space="preserve">
-    <value>Warning: The Toy Robot will fall off the table if moved any further!</value>
+    <value>Oh no! Your Toy Robot has fallen! Enter RESTART to start a new game.</value>
+  </data>
+  <data name="ToyRobotOutOfBoundsWarning" xml:space="preserve">
+    <value>Warning: The Toy Robot will fall off the table if moved any further! To get back into the game, provide valid PLACE commands.</value>
+  </data>
+  <data name="UnknownCommand" xml:space="preserve">
+    <value>Unknown command entered, please try again.</value>
   </data>
 </root>

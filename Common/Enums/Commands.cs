@@ -1,7 +1,7 @@
 ﻿namespace ToyRobot.Common.Enums
 {
     /// <summary>
-    /// A container for the valid command types.
+    /// A container for valid command types.
     /// </summary>
     public enum Commands
     {
@@ -9,6 +9,8 @@
         MOVE,
         LEFT,
         RIGHT,
-        REPORT
+        REPORT,
+        RESTART,
+        EXIT
     }
 }

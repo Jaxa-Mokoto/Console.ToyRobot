@@ -120,20 +120,8 @@
   <data name="ExitCommand" xml:space="preserve">
     <value>EXIT</value>
   </data>
-  <data name="LeftCommand" xml:space="preserve">
-    <value>LEFT</value>
-  </data>
-  <data name="MoveCommand" xml:space="preserve">
-    <value>MOVE</value>
-  </data>
-  <data name="PlaceCommand" xml:space="preserve">
-    <value>PLACE</value>
-  </data>
-  <data name="ReportCommand" xml:space="preserve">
-    <value>REPORT</value>
-  </data>
-  <data name="RightCommand" xml:space="preserve">
-    <value>RIGHT</value>
+  <data name="RestartCommand" xml:space="preserve">
+    <value>RESTART</value>
   </data>
   <data name="WelcomeBanner" xml:space="preserve">
     <value>░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░
@@ -154,7 +142,7 @@ The following commands are valid for you to use and initialise the game:
 &lt;LEFT&gt; 				- Will rotate your Toy Robot to the left by 90 degrees
 &lt;RIGHT&gt; 			- Will rotate your Toy Robot to the right by 90 degrees
 &lt;REPORT&gt; 			- Will submit the commands specified
-
+&lt;RESTART&gt;                  	- Will restart the game 
 
 An example of a valid report is:
 &gt; PLACE 0,0 NORTH

@@ -55,7 +55,7 @@ Output: (0,0) WEST
 > LEFT
 > MOVE
 > REPORT
-Output: (2,2) WEST
+Output: (3,3) NORTH
 
 #### Example 4 Input
 > PLACE (1,2) EAST
@@ -65,4 +65,4 @@ Output: (2,2) WEST
 > PLACE (3,1)
 > MOVE
 > REPORT
-Output: (2,1) WEST
+Output: (3,2) NORTH

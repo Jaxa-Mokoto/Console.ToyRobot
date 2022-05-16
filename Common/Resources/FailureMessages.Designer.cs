@@ -61,6 +61,15 @@ namespace ToyRobot.Common.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Please enter a command!.
+        /// </summary>
+        public static string EmptyOrNullCommand {
+            get {
+                return ResourceManager.GetString("EmptyOrNullCommand", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Invalid Compass Direction - valid direction is either NORTH, SOUTH, EAST or WEST.
         /// </summary>
         public static string InvalidCompassDirectionCommand {
@@ -75,6 +84,15 @@ namespace ToyRobot.Common.Resources {
         public static string InvalidDirectionCommand {
             get {
                 return ResourceManager.GetString("InvalidDirectionCommand", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to First command must be PLACE with DIRECTION.
+        /// </summary>
+        public static string InvalidFirstCommand {
+            get {
+                return ResourceManager.GetString("InvalidFirstCommand", resourceCulture);
             }
         }
         
@@ -97,11 +115,29 @@ namespace ToyRobot.Common.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Warning: The Toy Robot will fall off the table if moved any further!.
+        ///   Looks up a localized string similar to Oh no! Your Toy Robot has fallen! Enter RESTART to start a new game..
         /// </summary>
         public static string ToyRobotOutOfBounds {
             get {
                 return ResourceManager.GetString("ToyRobotOutOfBounds", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Warning: The Toy Robot will fall off the table if moved any further! To get back into the game, provide valid PLACE commands..
+        /// </summary>
+        public static string ToyRobotOutOfBoundsWarning {
+            get {
+                return ResourceManager.GetString("ToyRobotOutOfBoundsWarning", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Unknown command entered, please try again..
+        /// </summary>
+        public static string UnknownCommand {
+            get {
+                return ResourceManager.GetString("UnknownCommand", resourceCulture);
             }
         }
     }

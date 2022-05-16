@@ -6,14 +6,9 @@
     public class CommandDto
     {
         /// <summary>
-        /// The direction the robot should move in.
+        /// The name of the direction the robot moves in.
         /// </summary>
         public string CompassDirectionName { get; set; }
-
-        /// <summary>
-        /// The flag indicating if the robot should report the given commands.
-        /// </summary>
-        public bool Report { get; set; }
 
         /// <summary>
         /// The X coordinate of the place command.
@@ -26,8 +21,8 @@
         public int PlaceYCoordinate { get; set; }
 
         /// <summary>
-        /// 
+        /// The flag to identify if the first place command has been called.
         /// </summary>
-        public bool isFirstPlaceCommand { get; set; } = true;
+        public bool isInitialPlaceCommand { get; set; } = true;
     }
 }

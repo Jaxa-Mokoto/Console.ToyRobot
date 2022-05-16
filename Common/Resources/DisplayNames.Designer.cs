@@ -70,47 +70,11 @@ namespace ToyRobot.Common.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to LEFT.
+        ///   Looks up a localized string similar to RESTART.
         /// </summary>
-        public static string LeftCommand {
+        public static string RestartCommand {
             get {
-                return ResourceManager.GetString("LeftCommand", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to MOVE.
-        /// </summary>
-        public static string MoveCommand {
-            get {
-                return ResourceManager.GetString("MoveCommand", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to PLACE.
-        /// </summary>
-        public static string PlaceCommand {
-            get {
-                return ResourceManager.GetString("PlaceCommand", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to REPORT.
-        /// </summary>
-        public static string ReportCommand {
-            get {
-                return ResourceManager.GetString("ReportCommand", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to RIGHT.
-        /// </summary>
-        public static string RightCommand {
-            get {
-                return ResourceManager.GetString("RightCommand", resourceCulture);
+                return ResourceManager.GetString("RestartCommand", resourceCulture);
             }
         }
         

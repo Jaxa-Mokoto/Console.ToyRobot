@@ -1,12 +1,15 @@
 ﻿namespace ToyRobot.BusinessLayer.Services.Interfaces
 {
     /// <summary>
-    /// The service to implement a given report.
+    /// The service to process the given command(s).
     /// </summary>
     public interface IToyRobotService
     {
-        // Function to separate/ deal with the commands i.e. split the PLACE 3,5 input
-        // function to submit / report
-        //something to keep track of the order of commands
+        /// <summary>
+        /// Processes the given commands. 
+        /// </summary>
+        /// <param name="userCommand"></param>
+        /// <returns>The processed command with calculated behaviour.</returns>
+        string ProcessCommands(string userCommand);
     }
 }

@@ -1,4 +1,5 @@
 ﻿using System;
+using ToyRobot.BusinessLayer.Helpers;
 using ToyRobot.BusinessLayer.Services.Interfaces;
 using ToyRobot.Common.Enums;
 
@@ -7,7 +8,7 @@ namespace ToyRobot.BusinessLayer.Services
     /// <summary>
     /// The service to implement a given behaviour.
     /// </summary>
-    public class BehaviourService : IBehaviourService
+    public class RuleService : IRuleService
     {
         public Position Position { get; set; }
         public CompassDirection Direction { get; set; }
@@ -15,7 +16,7 @@ namespace ToyRobot.BusinessLayer.Services
         /// <summary>
         /// The constructor.
         /// </summary>
-        public BehaviourService() { }
+        public RuleService() { }
 
         public void Place(Position position, CompassDirection direction)
         {
@@ -24,12 +25,12 @@ namespace ToyRobot.BusinessLayer.Services
         }
 
         /// <summary>
-        /// 
+        /// Sets the robot's new place command.
         /// </summary>
-        /// <param name="xcoordinate"></param>
-        /// <param name="ycoordinate"></param>
-        /// <param name="direction"></param>
-        /// <returns></returns>
+        /// <param name="xcoordinate">The x-coordinate.</param>
+        /// <param name="ycoordinate">The y-coordinate.</param>
+        /// <param name="direction">The compass direction.</param>
+        /// <returns>A valid placement with direction and coordinates.</returns>
         public string PlaceBehaviour(int xcoordinate, int ycoordinate, CompassDirection direction)
         {
             Position nextPosition = new Position(xcoordinate, ycoordinate, direction);
@@ -47,9 +48,9 @@ namespace ToyRobot.BusinessLayer.Services
         }
 
         /// <summary>
-        /// 
+        /// Sets the new position for the robot adjusted by 1 unit.
         /// </summary>
-        /// <returns></returns>
+        /// <returns>The robot's next position.</returns>
         public Position NextMove()
         {
             Position nextPosition = new Position(Position.X, Position.Y, Position.Direction);
@@ -82,10 +83,10 @@ namespace ToyRobot.BusinessLayer.Services
         }
 
         /// <summary>
-        /// 
+        /// Sets the new rotated direction to either the left or right.
         /// </summary>
-        /// <param name="rotationDirection"></param>
-        /// <returns></returns>
+        /// <param name="rotationDirection">The rotated direction.</param>
+        /// <returns>The new rotated direction with the updated compass direction.</returns>
         public CompassDirection RotationBehaviour(string rotationDirection)
         {
             int rotationValue = 0;
@@ -157,9 +158,9 @@ namespace ToyRobot.BusinessLayer.Services
         }
 
         /// <summary>
-        /// 
+        /// Displays the new report.
         /// </summary>
-        /// <returns></returns>
+        /// <returns>The report output.</returns>
         public string ReportBehaviour()
         {
             string reportResult = $"Output: {Position.X}, {Position.Y}, {Position.Direction}";
